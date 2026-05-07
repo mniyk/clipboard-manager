@@ -19,12 +19,6 @@ jobs:
             binary: clipboard-manager-windows-amd64.exe
             ldflags: "-s -w -H windowsgui"
 
-          - os: macos-13
-            goos: darwin
-            goarch: amd64
-            binary: clipboard-manager-darwin-amd64
-            ldflags: "-s -w"
-
           - os: macos-latest
             goos: darwin
             goarch: arm64
