@@ -234,7 +234,10 @@ func main() {
 	))
 
 	ctx, cancel := context.WithCancel(context.Background())
-	w.SetOnClosed(func() { cancel() })
+	w.SetOnClosed(func() {
+		cancel()
+		a.Quit()
+	})
 
 	// クリップボード監視ゴルーチン
 	go func() {
