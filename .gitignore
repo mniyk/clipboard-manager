@@ -1,0 +1,12 @@
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Build output
+dist/
+
+# Go test cache
+*.test
+*.out
